@@ -1,24 +1,58 @@
+/* @import "css_reset"; */
 @import "variables";
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
 :root {
-  // Default config
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  height: 100%;
+  // Display
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  // Font stuff
   font-weight: 400;
-  line-height: 1.5;
-  color-scheme: light dark;
-  // General Body Styles
-  font-family: 'Outfit', sans-serif;
-  color: rgba(255, 255, 255, 0.87);
+  font-size: 15px;
+  font-family: "Outfit", sans-serif;
+  // Color stuff
   background-color: $grayish_blue;
+  color: $dark_blue;
 }
 
-div {
-  h1 {
-    color: blue !important;
+body {
+  display: flex;
+  align-items: center;
+}
+
+#app {
+  // Dumb width and height values, should go for something different i dunno
+  width: 425px;
+  height: 640px;
+  margin: 0;
+  padding: 0;
+  .qr_card {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 605px;
+    padding: 20px;
+    justify-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    img {
+      border-radius: 10px;
+      width: 380px;
+      text-align: center;
+    }
+    p {
+      color: $grayish_blue;
+      font-size: 1.5rem;
+      text-align: center;
+    }
   }
 }
