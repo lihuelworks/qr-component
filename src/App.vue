@@ -12,6 +12,5 @@
     </p>
   </div>
 </template>
-<h1>Hello World</h1>
 
 <style lang="scss"></style>
