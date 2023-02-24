@@ -29,15 +29,8 @@ body {
   // Webpage size
   width: 100vw;
   min-height: 100vh;
-  /* padding: 3rem 2rem; */ // Message for git: removed said margin after realizing it made no sense if the element was centered, also it added a scrollbar to my page
-}
-
-html { background-color: #000; } 
-body {
-    min-height: 100vh;
-    max-width: 400px;
-    background-color: papayawhip; 
-    margin: 0 auto;
+  /* max-width: 400px; */
+  margin: 0 auto;
 }
 
 .qr_card {
