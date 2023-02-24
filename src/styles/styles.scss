@@ -41,20 +41,21 @@ body {
   justify-items: center;
   justify-content: center;
   // Dimensions
-  width: 28.333rem;
-  height: 42.667rem;
-  padding: 0 15px;
+  width: 26rem;
+  height: 43.5rem;
+  padding: 0 0.9375rem;
+  margin-bottom: -1.25rem;
   // Colors & Effects
-  border-radius: 30px;
+  border-radius: 1.875rem;
   background-color: $white;
-  box-shadow: 0px 20px 28px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0rem 1.25rem 1.75rem 0.25rem rgba(0, 0, 0, 0.1);
 
   &-image {
     // Img reset
     display: block;
     max-width: 100%;
-    border-radius: 10px;
-    width: 380px;
+    border-radius: 0.625rem;
+    width: 25rem;
     text-align: center;
     object-fit: contain;
   }
@@ -63,13 +64,15 @@ body {
       font-size: 2rem;
       font-weight: 700;
       text-align: center;
+      /* padding: 0;
+      margin: 0; */
     }
     p {
-      color: $grayish_blue;
       margin: 0;
-      padding: 0 18px;
+      padding: 0 1.125rem;
       font-size: 1.3rem;
       text-align: center;
+      color: $grayish_blue;
     }
   }
 }
