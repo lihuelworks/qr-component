@@ -3,51 +3,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
 :root {
-  height: 100%;
-  // Display
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  justify-items: center;
   // Font stuff
   font-weight: 400;
   font-size: 15px;
   font-family: "Outfit", sans-serif;
   // Color stuff
-  background-color: $grayish_blue;
+  background-color: $light_gray;
   color: $dark_blue;
 }
 
 body {
+  // Webpage display
   display: flex;
   align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  // Webpage size
+  width: 100vw;
+  min-height: 100vh;
+  padding: 3rem 2rem; // Added padding on it's direct parent to avoid your container from touching the top, bottom and sides of the screen for mobile view. (Aodele Temitope feedback on frontend masters)
 }
 
-#app {
-  // Dumb width and height values, should go for something different i dunno
-  width: 425px;
-  height: 640px;
-  margin: 0;
-  padding: 0;
-  .qr_card {
-    background-color: $white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 650px;
-    justify-items: center;
-    justify-content: center;
-    border-radius: 30px;
-    padding: 0 15px;
-    box-shadow: 0px 20px 28px 4px rgba(0,0,0,0.1);
+.qr_card {
+  // Display
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  // Dimensions
+  width: 28.333rem;
+  height: 42.667rem;
+  padding: 0 15px;
+  // Colors & Effects
+  border-radius: 30px;
+  background-color: $white;
+  box-shadow: 0px 20px 28px 4px rgba(0, 0, 0, 0.1);
+
+  &-image {
+    // Img reset
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+    width: 380px;
+    text-align: center;
+  }
+  &-text {
     h3 {
       font-size: 2rem;
       font-weight: 700;
-      text-align: center;
-    }
-    img {
-      border-radius: 10px;
-      width: 380px;
       text-align: center;
     }
     p {
