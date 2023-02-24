@@ -4,13 +4,20 @@
 
 :root {
   // Font stuff
-  font-weight: 400;
-  font-size: 15px;
   font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
   // Color stuff
   background-color: $light_gray;
   color: $dark_blue;
 }
+
+/* * { 
+  // CSS reset that apparently my previous CSS reset didn't have
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
 
 body {
   // Webpage display
@@ -22,7 +29,15 @@ body {
   // Webpage size
   width: 100vw;
   min-height: 100vh;
-  padding: 3rem 2rem; // Added padding on it's direct parent to avoid your container from touching the top, bottom and sides of the screen for mobile view. (Aodele Temitope feedback on frontend masters)
+  /* padding: 3rem 2rem; */ // Message for git: removed said margin after realizing it made no sense if the element was centered, also it added a scrollbar to my page
+}
+
+html { background-color: #000; } 
+body {
+    min-height: 100vh;
+    max-width: 400px;
+    background-color: papayawhip; 
+    margin: 0 auto;
 }
 
 .qr_card {
@@ -48,6 +63,7 @@ body {
     border-radius: 10px;
     width: 380px;
     text-align: center;
+    object-fit: contain;
   }
   &-text {
     h3 {
